@@ -19,8 +19,8 @@ Simple CRUD APIs
       "update": "https://crud.do/:type/:id/set?title=Amazing+Title",
       "delete": "https://crud.do/:type/:id/delete"
     },
-    "typeOf": 'https://apis.do',
-    "repo": 'https://github.com/drivly/crud.do',
+    "typeOf": "https://apis.do",
+    "repo": "https://github.com/drivly/crud.do",
   },
   "types": {
     "authors": "https://crud.do/authors",
