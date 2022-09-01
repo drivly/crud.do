@@ -15,7 +15,7 @@ export default {
           list: origin + '/:type',
           create: origin + '/:type/new',
           read: origin + '/:type/:id',
-          update: origin + '/:type/:id/set?title=Amazing+Title&description=This+is+a+description',
+          update: origin + '/:type/:id/set?title=Amazing+Title',
           delete: origin + ':type/:id/delete'
         },
         memberOf: 'https://primitives.do',
