@@ -10,6 +10,7 @@ Simple CRUD APIs
     "name": "crud.do",
     "description": "Hypermedia-Driven CRUD",
     "url": "https://crud.do",
+    "api": "https://crud.do/api",
     "endpoints": {
       "types": "https://crud.do",
       "list": "https://crud.do/:type",
@@ -18,7 +19,8 @@ Simple CRUD APIs
       "update": "https://crud.do/:type/:id/set?title=Amazing+Title",
       "delete": "https://crud.do/:type/:id/delete"
     },
-    "memberOf": "https://primitives.do"
+    typeOf: 'https://apis.do',
+    repo: 'https://github.com/drivly/crud.do',
   },
   "types": {
     "authors": "https://crud.do/authors",
