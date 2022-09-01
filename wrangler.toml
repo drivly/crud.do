@@ -8,3 +8,10 @@ compatibility_date = "2022-08-23"
 services = [
   { binding = "CTX", service = "ctx-do", environment = "production" }
 ]
+
+[durable_objects]
+bindings = [{name = "CRUD", class_name = "CRUD"}]
+
+[[migrations]]
+tag = "v1"
+new_classes = ["CRUD"]
