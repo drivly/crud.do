@@ -34,7 +34,7 @@ export default {
   }
 }
 
-export class Logger {
+export class CRUD {
   constructor(state, env) {
     this.state = state
   }
@@ -45,3 +45,4 @@ export class Logger {
     const data = await this.state.storage.list({limit}).then(list => Object.fromEntries(list))
     return new Response(JSON.stringify({data}))
   }
+}
