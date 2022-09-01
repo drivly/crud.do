@@ -1,7 +1,7 @@
 export default {
   fetch: async (req, env) => {
     
-    const { user } = await env.CTX.fetch('https://ctx.do', req).then(res => res.json())
+    const { user } = await env.CTX.fetch(req).then(res => res.json())
     const { origin, pathname, search } = new URL(req.url)
  
     return new Response(JSON.stringify({
