@@ -33,3 +33,15 @@ export default {
     }, null, 2), { headers: { 'content-type': 'application/json; charset=utf-8' }})
   }
 }
+
+export class Logger {
+  constructor(state, env) {
+    this.state = state
+  }
+  async fetch(req) {
+    const { origin, pathname, search, searchParams } = new URL(req.url)
+    const [ _, type, id, action ] = pathname.split('/')
+    const { limit = 10 } = Object.fromEntries(searchParams)
+    const data = await this.state.storage.list({limit}).then(list => Object.fromEntries(list))
+    return new Response(JSON.stringify({data}))
+  }
