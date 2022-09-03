@@ -12,6 +12,7 @@ export default {
         url: 'https://crud.do',
         api: 'https://crud.do/api',
         endpoints: {
+          admin: origin + '/admin',
           types: origin + '/types',
           list: origin + '/:type',
           create: origin + '/:type/new',
