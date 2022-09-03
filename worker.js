@@ -20,7 +20,10 @@ export default {
           read: origin + '/:type/:id',
           update: origin + '/:type/:id/set?key=value',
           delete: origin + '/:type/:id/delete',
-          import: origin + '/import/:url'
+          import: origin + '/admin/import/:url',
+          export: origin + '/admin/export/:url',
+          backup: origin + '/admin/backup/:url',
+          restore: origin + '/admin/restore/:url',
         },
         type: 'https://apis.do/data',
         repo: 'https://github.com/drivly/crud.do',
