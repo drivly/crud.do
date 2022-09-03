@@ -11,16 +11,16 @@ export default {
         description: 'Hypermedia-Driven CRUD',
         url: 'https://crud.do',
         endpoints: {
-          listTypes: origin,
-          createType: origin + '/new',
-          listItems: origin + '/:type',
-          createItem: origin + '/:type/new',
-          readItem: origin + '/:type/:id',
-          updateItem: origin + '/:type/:id/set?property=value',
-          deleteItem: origin + '/:type/:id/delete',
-          importData: origin + '/import/:url'
+          types: origin,
+          list: origin + '/:type',
+          create: origin + '/:type/new',
+          read: origin + '/:type/:id',
+          update: origin + '/:type/:id/set?property=value',
+          delete: origin + '/:type/:id/delete',
+          import: origin + '/import/:url'
         },
-        memberOf: 'https://primitives.do',
+        type: 'https://apis.do/data',
+        repo: 'https://github.com/drivly/crud.do',
       },
       types: {
         authors: origin + '/authors',
