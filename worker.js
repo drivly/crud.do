@@ -15,6 +15,7 @@ export default {
           admin: origin + '/admin',
           types: origin + '/types',
           list: origin + '/:type',
+          search: origin + '/:type?property=value',
           create: origin + '/:type/new',
           read: origin + '/:type/:id',
           update: origin + '/:type/:id/set?property=value',
