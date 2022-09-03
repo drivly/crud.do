@@ -15,10 +15,10 @@ export default {
           admin: origin + '/admin',
           types: origin + '/types',
           list: origin + '/:type',
-          search: origin + '/:type?property=value',
+          search: origin + '/:type?key=value',
           create: origin + '/:type/new',
           read: origin + '/:type/:id',
-          update: origin + '/:type/:id/set?property=value',
+          update: origin + '/:type/:id/set?key=value',
           delete: origin + '/:type/:id/delete',
           import: origin + '/import/:url'
         },
