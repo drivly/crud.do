@@ -10,8 +10,9 @@ export default {
         name: 'crud.do',
         description: 'Hypermedia-Driven CRUD',
         url: 'https://crud.do',
+        api: 'https://crud.do/api',
         endpoints: {
-          types: origin,
+          types: origin + '/types',
           list: origin + '/:type',
           create: origin + '/:type/new',
           read: origin + '/:type/:id',
