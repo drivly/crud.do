@@ -1,6 +1,6 @@
 name = "crud-do"
 account_id = "b6641681fe423910342b9ffa1364c76d"
-route = { pattern = "*/*", zone_id = "fc91564c98206607456896096a2265f7" }
+route = { pattern = "*/*", zone_name = "crud.do" }
 main = "worker.js"
 usage_model = "unbound"
 compatibility_date = "2022-08-23"
