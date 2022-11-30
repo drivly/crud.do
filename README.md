@@ -30,22 +30,6 @@ Simple CRUD APIs
     "subscriptions": "https://crud.do/subscriptions",
     "tags": "https://crud.do/tags",
     "users": "https://crud.do/users"
-  },
-  "user": {
-    "login": "https://crud.do/login",
-    "signup": "https://crud.do/signup",
-    "authenticated": false,
-    "plan": "build",
-    "ip": "76.43.4.126",
-    "isp": "Comcast Cable",
-    "flag": "🇺🇸",
-    "city": "Bloomington",
-    "metro": "Minneapolis-St. Paul",
-    "region": "Minnesota",
-    "country": "United States",
-    "continent": "NA",
-    "requestId": "743cdf34aa5e6174-ORD",
-    "recentInteractions": 1
   }
 }
 ```
